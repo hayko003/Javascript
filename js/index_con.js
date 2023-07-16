@@ -6,3 +6,17 @@ function myFn(a, b) {
 }
 
 console.log.myFn();
+
+const personOne = {
+  name:"Bob",
+  age: 21,
+}
+
+function increasePersonAge(person) {
+  const updatedPerson = Object.assign({}, person)
+  updatedPerson.age += 1
+  return updatedPerson
+}
+
+const updatedPersonOne = increasePersonAge(PersonOne)
+console.log(personOne.age)
